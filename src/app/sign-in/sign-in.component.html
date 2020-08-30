@@ -1,0 +1,20 @@
+<div class="container page-layout">
+    <div class="row">
+      <div class="col-lg-8">
+        <img [src]="imageUrl" class="my-img">
+      </div>
+      <div class="col-lg-4">
+        <div class="row form-layout">
+          <label>User name</label>
+          <input type="text" [(ngModel)]="signupForm.name"/>
+        </div>
+        <div class="row form-layout">
+          <label>Password</label>
+          <input type="password" [(ngModel)]="signupForm.password"/>
+        </div>
+        <div class="row form-layout">
+          <button [routerLink]="['/dashboard', signupForm.name]">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>

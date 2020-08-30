@@ -1,0 +1,7 @@
+<h2>Welcome {{fullname}} the news is as follows:-</h2>
+
+<div *ngFor="let art of articles">
+    <h3>Author:- {{art?.author}}</h3>
+    <p>Content:- {{art?.content}}</p>
+    <p>Description:-{{art?.description}}</p>
+</div>
