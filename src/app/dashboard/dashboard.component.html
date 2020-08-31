@@ -1,7 +1,11 @@
 <h2>Welcome {{fullname}} the news is as follows:-</h2>
-
-<div *ngFor="let art of articles">
-    <h3>Author:- {{art?.author}}</h3>
-    <p>Content:- {{art?.content}}</p>
-    <p>Description:-{{art?.description}}</p>
+<div class="row col-lg-8"><input type="text" value="Dummy search.."/></div>
+<div class="row col-lg-12">
+    <div class="news-container" *ngFor="let art of articles">
+    
+            <div>Author:- {{art?.author}}</div>
+            <div>Content:- {{art?.content}}</div>
+            <div>Description:-{{art?.description}}</div>
+            <div><img [src]="art?.urlToImage"></div>
+    </div>
 </div>
